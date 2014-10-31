@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://control/" xmlns:tns="http://control/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="calculeString" type="tns:calculeString"/>
+
+  <xs:element name="calculeStringResponse" type="tns:calculeStringResponse"/>
+
+  <xs:complexType name="calculeString">
+    <xs:sequence>
+      <xs:element name="numero1" type="xs:string" minOccurs="0"/>
+      <xs:element name="oprador" type="xs:string" minOccurs="0"/>
+      <xs:element name="numero2" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculeStringResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
